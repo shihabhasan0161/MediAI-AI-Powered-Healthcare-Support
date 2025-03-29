@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediAI - AI Medical Healthcare Support</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fas fa-heartbeat"></i>
+          <span>MediAI</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#symptom-checker">Symptom Checker</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>AI-Powered <span>Healthcare</span> Support</h1>
+          <p>Get instant medical advice, symptom checking, and personalized health insights with our advanced AI technology.</p>
+          <div class="cta-buttons">
+            <a href="#chatbot" class="btn-primary">Get Started</a>
+            <a href="#" class="btn-secondary" id="watch-demo">
+              <i class="fas fa-play-circle"></i> Watch Demo
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Medical Technology">
+          <div class="play-btn" id="play-video">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our AI Health <span>Services</span></h2>
+        <p>Discover how our AI-powered tools can support your healthcare journey with personalized insights and guidance.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3>AI Health Assessment</h3>
+          <p>Get personalized health assessments based on your symptoms, medical history, and lifestyle factors.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <h3>Symptom Analysis</h3>
+          <p>Our AI algorithm analyzes your symptoms to provide potential causes and recommended next steps.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Medication Reminders</h3>
+          <p>Never miss a dose with personalized medication reminders and adherence tracking.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Health Data Tracking</h3>
+          <p>Monitor your health metrics over time and receive AI-powered insights on trends and patterns.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-apple-alt"></i>
+          </div>
+          <h3>Nutritional Guidance</h3>
+          <p>Receive personalized dietary recommendations based on your health goals and medical conditions.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Mental Health Support</h3>
+          <p>Access AI-guided techniques for stress reduction, anxiety management, and improved mental wellbeing.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptom Checker Section -->
+  <section id="symptom-checker" class="tools-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Try Our <span>Health Tools</span></h2>
+        <p>Experience our AI-powered health tools designed to provide quick insights and guidance for your health concerns.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="symptom-checker">
+          <div class="tool-header">
+            <h3>Symptom Checker</h3>
+            <p class="tool-description">Select your symptoms for a preliminary assessment</p>
+          </div>
+          
+          <div class="tool-content">
+            <div class="form-group">
+              <label>Select Your Symptoms:</label>
+              <div class="symptoms-grid">
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="headache" class="symptom">
+                  <label for="headache">Headache</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="fever" class="symptom">
+                  <label for="fever">Fever</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="cough" class="symptom">
+                  <label for="cough">Cough</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="sore-throat" class="symptom">
+                  <label for="sore-throat">Sore Throat</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="shortness-breath" class="symptom">
+                  <label for="shortness-breath">Shortness of Breath</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="fatigue" class="symptom">
+                  <label for="fatigue">Fatigue</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="body-aches" class="symptom">
+                  <label for="body-aches">Body Aches</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="nausea" class="symptom">
+                  <label for="nausea">Nausea</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="dizziness" class="symptom">
+                  <label for="dizziness">Dizziness</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="chest-pain" class="symptom">
+                  <label for="chest-pain">Chest Pain</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="rash" class="symptom">
+                  <label for="rash">Rash</label>
+                </div>
+                <div class="symptom-checkbox">
+                  <input type="checkbox" id="chills" class="symptom">
+                  <label for="chills">Chills</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="duration">Duration:</label>
+                <select id="duration" required>
+                  <option value="">Select duration</option>
+                  <option value="less-than-day">Less than a day</option>
+                  <option value="1-3-days">1-3 days</option>
+                  <option value="3-7-days">3-7 days</option>
+                  <option value="1-2-weeks">1-2 weeks</option>
+                  <option value="more-than-2-weeks">More than 2 weeks</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="severity">Severity:</label>
+                <select id="severity" required>
+                  <option value="">Select severity</option>
+                  <option value="mild">Mild - Noticeable but not interfering with daily activities</option>
+                  <option value="moderate">Moderate - Somewhat interfering with daily activities</option>
+                  <option value="severe">Severe - Significantly interfering with daily activities</option>
+                </select>
+              </div>
+            </div>
+
+            <button id="check-symptoms" class="btn-primary" disabled>Check Symptoms</button>
+
+            <div id="symptom-result" class="result-box" style="display: none;"></div>
+
+            <div class="disclaimer">
+              <p><strong>Disclaimer:</strong> This symptom checker is for informational purposes only and is not a qualified medical opinion. Always consult with a healthcare professional for proper diagnosis and treatment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Chatbot -->
+        <div class="chatbot" id="chatbot">
+          <div class="chatbot-header">
+            <i class="fas fa-robot"></i>
+            <h3>MediAI Assistant</h3>
+          </div>
+          
+          <div class="chat-messages" id="chat-messages">
+            <div class="message ai-message">
+              <div class="message-content">
+                <p>Hello! I'm MediAI, your personal health assistant. How can I help you today?</p>
+                <span class="message-time">12:00 PM</span>
+              </div>
+            </div>
+            <!-- More messages will be added dynamically with JavaScript -->
+          </div>
+          
+          <div class="chat-input">
+            <form id="chat-form">
+              <input type="text" id="user-input" placeholder="Type your health concern or question...">
+              <button type="submit" id="send-button" disabled>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <p class="chat-disclaimer">This AI assistant is not a substitute for professional medical advice. If you're experiencing a medical emergency, please call emergency services immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <i class="fas fa-heartbeat"></i>
+            <span>MediAI</span>
+          </div>
+          <p>Transforming healthcare with AI-powered medical advice and support. Available 24/7 to help with your health concerns.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">AI Health Assistant</a></li>
+            <li><a href="#">Symptom Analysis</a></li>
+            <li><a href="#">Medication Reminders</a></li>
+            <li><a href="#">Health Insights</a></li>
+            <li><a href="#">Personalized Health Tips</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Health Articles</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">API Documentation</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>support@mediai.com</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Innovation Drive, Tech City, TC 90210</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> MediAI. All rights reserved.</p>
+        <p class="disclaimer">Disclaimer: This service is not a replacement for professional medical advice. Always consult with a healthcare provider for medical concerns.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="modal" id="video-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="video-container">
+        <video id="demo-video" controls>
+          <source src="https://player.vimeo.com/external/439028298.sd.mp4?s=cc12922eed046f1edd61e3d41232ec85175c1394&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html> 
