@@ -17,10 +17,6 @@ A modern, responsive web application that provides AI-powered healthcare support
 ![Desktop View](assets/desktop-view.png)
 *Main interface of the AI Medical Healthcare Support web app*
 
-### Mobile View
-![Mobile View](assets/mobile-view.png)
-*Responsive design optimized for mobile devices*
-
 ### Symptom Checker
 ![Symptom Checker](assets/symptom-checker.png)
 *Interactive symptom analysis tool*
